@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --black-5:#0000000D;
+    --black-10: #0000001A;
+    --black-20: #00000033;
+    --black-40: #00000066;
+    --black-100: #1C1C1C;
+
+    --white-100: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+div.dashboard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 3fr;
+}
+.left-side-bar{
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px 25px;
+    border-right: 1px solid #0000000D ;
+}
+div.user_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.user-avatar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+div.user-avatar h5{
+    color: var(--black-100);
+}
+
+div.favorites{
+    display: flex;
+    gap: 16px;
+}
+.left-side-bar p{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3rem;
+    color: var(--black-40);
+}
+.left-side-bar p.recently{
+    color: var(--black-20);
+}
+.left-side-bar h5{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--black-40)
+}
+.left-side-bar ul{
+    list-style: none;
+    margin: auto;
+    padding-left: 0;
+}
+#user-profile_dropdown{
+    padding-left: 3rem;
+}
+.left-side-bar li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--black-100);
+}
+#active{
+    display: inline-block;
+    /* width: 250px; */
+    height: 28px;
+    padding: 4px 74px 4px 0px;
+    border-radius: 8px;
+    background-color: var(--black-5);
+    border-left: 4px solid var(--black-100);
+}
+.logo-container{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
