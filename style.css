@@ -5,12 +5,16 @@
     --black-10: #0000001A;
     --black-20: #00000033;
     --black-40: #00000066;
+    --black-80: #000000CC;
     --black-100: #1C1C1C;
 
     --white-100: #FFFFFF;
 
     --primary-blue: #E3F5FF;
     --primary-purple: #E5ECF6;
+    --primary-light: #F7F9FB;
+
+    --secondary-blue: #A8C5DA;
 }
 
 *{
@@ -110,8 +114,280 @@ div.favorites{
     margin-top: 250px;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 /* Left sidebar ends here */
+
+/* middle section starts here */
+
+/* Header starts here */
+header{
+    width: 100%;
+    display: flex;
+    height: 82px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--black-10);
+}
+
+header button{
+    width: 28px;
+    height: 28px;
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+}
+header ul{
+    margin: 0;
+    list-style: none;
+    display: inline;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-style: normal;
+    font-weight: 400;
+}
+
+ul.breadcrumb li a{
+    color: var(--black-40);
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: var(--black-40);
+    content: "/\00a0";
+}
+
+#active-breadcrumb{
+    color: var(--black-100);
+}
+/* Header ends here */
+
+/* Main starts here */
+div.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 10px;
+    justify-content: center;
+}
+
+.info-container button{
+    display: inline-flex;
+    height: 28px;
+    padding: 4px 4px 4px 8px;
+    align-self: flex-start;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--black-100);
+}
+
+.stats-container{
+    display: flex;
+    margin-top: 20px;
+    width: 98%;
+    gap: 28px;
+    justify-content: space-between;
+}
+
+.stats{
+    width: 23%;
+    height: 112px;
+    padding: 20px 25px;
+    border-radius: 16px;
+    background-color: var(--primary-blue);
+}
+#stats-purple{
+    background-color: var(--primary-purple);
+}
+.stats h6{
+    color: var(--black-100);
+    margin: 3px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    height: 20px;
+}
+.stats h5{
+    color: var(--black-100);
+    margin: 2px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+}
+.stats-numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stats-numbers span{
+    color: var(--black-100, #1C1C1C);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+div.line-graph-cont{
+    display: flex;
+    margin-top: 33px;
+    width: 98%;
+    gap: 28px;
+    justify-content: space-between;
+    position: relative;
+}
+.line-graph{
+    width: 74%;
+    height: 350px;
+    background-color: var(--primary-light);
+    padding: 25px 16px 22px 26px;
+    border-radius: 16px;
+}
+
+.line-graph_text{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.line-graph_text p{
+    display: inline;
+    color: var(--black-100);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px
+}
+
+#highlight{
+    color: var(--black-40);
+    font-weight: 400;
+}
+
+.week-text-cont{
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+
+#week-text{
+    color: var(--black-100);
+    font-weight: 400;
+}
+
+.line-graph_text hr{
+    width: 1px;
+    height: 20px;
+    margin: 0;
+}
+
+.week-text-cont svg{
+    color: var(--secondary-blue);
+}
+
+.chart{
+    width: 100%;
+}
+
+.vector-line1{
+    position: absolute;
+    top: 112px;
+    left: 90px;
+}
+
+.vector-line2{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+}
+
+.chart-dot{
+    position: absolute;
+    top: 150px;
+    left: 415px;
+}
+
+.char-note{
+    display: inline-flex;
+    height: 28px;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--black-80);
+
+    position: absolute;
+    top: 119px;
+    left: 375px;
+}
+
+.char-note p{
+    color: var(--white-100);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+}
+
+.web-traffic-chart{
+    width: 23%;
+    height: 350px;
+    background-color: var(--primary-light);
+    padding: 26px 20px;
+    border-radius: 16px;
+}
+
+.web-traffic-chart h5{
+    color: var(--black-100, #1C1C1C);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0.3rem;
+}
+
+.web-traffic-chart_content{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.web-traffic-chart_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.web-traffic-chart_text p{
+    margin: 0.6rem;
+    color: var(--black-100, #1C1C1C);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.line-chart{
+    display: flex;
+}
+
+/* Main ends here */
+/* Middle section ends here */
 
 
 /* Right sidebar starts here */
@@ -120,6 +396,11 @@ div.favorites{
      padding: 10px 20px;
      border-left: 1px solid #0000000D ;
      justify-content: center;
+}
+
+.notifications,
+.activities{
+    margin-bottom: 2rem;
 }
 
 .right-side-bar h4{
