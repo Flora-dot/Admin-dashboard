@@ -403,7 +403,7 @@ div.line-graph-cont{
 .line-graph_text{
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 16px;
 }
 
 .line-graph_text p{
@@ -566,37 +566,37 @@ img.chart2{
 
 .histogram{
     position: absolute;
-    top: 143px;
+    top: 160px;
     left: 60px;
 }
 
 .histogram1{
     position: absolute;
-    top: 129px;
+    top: 147px;
     left: 117px;
 }
 
 .histogram2{
     position: absolute;
-    top: 139px;
+    top: 158px;
     left: 170px;
 }
 
 .histogram3{
     position: absolute;
-    top: 90px;
+    top: 107px;
     left: 225px;
 }
 
 .histogram4{
     position: absolute;
-    top: 175px;
+    top: 192px;
     left: 280px;
 }
 
 .histogram5{
     position: absolute;
-    top: 123px;
+    top: 139px;
     left: 330px;
 }
 
@@ -737,55 +737,6 @@ img.chart2{
 
 
 /* media query starts here */
-@media only screen and (min-width: 1100px) and (max-width: 1440px){
-    .line-graph{
-        padding: 25px 10px 22px 20px ;
-    }
-    .vector-line1{
-        position: absolute;
-        top: 112px;
-        left: 80px;
-    }
+/* @media only screen and (min-width: 920px) and (max-width: 1024px)  {
     
-    .vector-line2{
-        position: absolute;
-        top: 120px;
-        left: 70px;
-    } 
-
-    .histogram{
-        position: absolute;
-        top: 140px;
-        left: 60px;
-    }
-    
-    .histogram1{
-        position: absolute;
-        top: 129px;
-        left: 117px;
-    }
-    
-    .histogram2{
-        position: absolute;
-        top: 139px;
-        left: 170px;
-    }
-    
-    .histogram3{
-        position: absolute;
-        top: 90px;
-        left: 225px;
-    }
-    
-    .histogram4{
-        position: absolute;
-        top: 175px;
-        left: 280px;
-    }
-    
-    .histogram5{
-        position: absolute;
-        top: 123px;
-        left: 330px;
-    }
-}
+} */
