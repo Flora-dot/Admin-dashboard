@@ -734,3 +734,58 @@ img.chart2{
     border-left: 2px solid var(--black-10);
 }
 /* Right sidebar ends here */
+
+
+/* media query starts here */
+@media only screen and (min-width: 1100px) and (max-width: 1440px){
+    .line-graph{
+        padding: 25px 10px 22px 20px ;
+    }
+    .vector-line1{
+        position: absolute;
+        top: 112px;
+        left: 80px;
+    }
+    
+    .vector-line2{
+        position: absolute;
+        top: 120px;
+        left: 70px;
+    } 
+
+    .histogram{
+        position: absolute;
+        top: 140px;
+        left: 60px;
+    }
+    
+    .histogram1{
+        position: absolute;
+        top: 129px;
+        left: 117px;
+    }
+    
+    .histogram2{
+        position: absolute;
+        top: 139px;
+        left: 170px;
+    }
+    
+    .histogram3{
+        position: absolute;
+        top: 90px;
+        left: 225px;
+    }
+    
+    .histogram4{
+        position: absolute;
+        top: 175px;
+        left: 280px;
+    }
+    
+    .histogram5{
+        position: absolute;
+        top: 123px;
+        left: 330px;
+    }
+}
