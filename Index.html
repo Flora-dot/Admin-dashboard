@@ -17,7 +17,7 @@
               alt="A person wearing a hoodie"
               class="dp"
             />
-            <h5 class="user-name">ByeWind</h5>
+            <h5 id="user-name">ByeWind</h5>
           </div>
           <img src="Images/ArrowLineDown2.svg" alt="" />
         </div>
@@ -85,10 +85,10 @@
                 <a href="#">User profile</a>
               </div>
             </li>
-            <div>
+            <div class="dropdown">
               <ul id="user-profile_dropdown">
                 <li><a href="#">Overview</a></li>
-                <li><a href="#" id="active">Projects</a></li>
+                <li><img src="Images/_Sidebar Item.svg" alt=""></li>
                 <li><a href="#">Campaigns</a></li>
                 <li><a href="#">Documents</a></li>
                 <li><a href="#">Followers</a></li>
@@ -146,7 +146,7 @@
           </div>
           <div class="navigation">
             <div class="search">
-              <img src="Images/Search.svg" alt="search icon">
+              <img src="Images/Search.svg" alt="search icon" id="invert-img">
               <input type="search" placeholder="Search" />
             </div>
             <button><img src="Images/Sun.svg" alt="" id="theme" /></button>
@@ -162,7 +162,7 @@
         <!-- Main starts  -->
         <main>
             <div class="info-container">
-                <button>Today <img src="Images/ArrowLineDown2.svg" alt=""></button>
+                <button>Today <img src="Images/ArrowLineDown2.svg" alt="" id="invert-img"></button>
                 <!-- stats container starts -->
                 <div class="stats-container">
                     <div class="stats">
@@ -204,7 +204,7 @@
                             <p id="highlight">Operating Status</p>
                             <hr>
                             <div class="week-text-cont">
-                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="week-icon1">
                                 <g id="Dot2">
                                 <path id="Ellipse 958" d="M12.5 10C12.5 11.3807 11.3807 12.5 10 12.5C8.61929 12.5 7.5 11.3807 7.5 10C7.5 8.61929 8.61929 7.5 10 7.5C11.3807 7.5 12.5 8.61929 12.5 10Z" fill="black" fill-opacity="0.2"/>
                                 </g>
@@ -235,7 +235,7 @@
                         <div class="web-traffic-chart_content">
                           <div class="web-traffic-chart_text">
                             <p>Google</p>
-                            <p>Yourtube</p>
+                            <p>Youtube</p>
                             <p>Instagram</p>
                             <p>Pinterest</p>
                             <p>Facebook</p>
@@ -256,7 +256,7 @@
                     <img src="Images/ChartScale2.svg" alt="chart" class="chart2" id="invert-img">
                     <img src="Images/Histogram Item.svg" alt="Histogram" class="histogram">
                     <img src="Images/Histogram Item (1).svg" alt="Histogram" class="histogram1">
-                    <img src="Images/Histogram Item (2).svg" alt="Histogram" class="histogram2">
+                    <img src="Images/Histogram Item (2).svg" alt="Histogram" class="histogram2" id="invert-img">
                     <img src="Images/Histogram Item (3).svg" alt="Histogram" class="histogram3">
                     <img src="Images/Histogram Item (4).svg" alt="Histogram" class="histogram4">
                     <img src="Images/Histogram Item (5).svg" alt="Histogram" class="histogram5">
@@ -267,10 +267,38 @@
                       <img src="Images/Group 427318836.svg" alt="">
 
                       <div class="location-states">
-                        <p>United States</p>
-                        <p>Canada</p>
-                        <p>Mexico</p>
-                        <p>Other</p>
+                        <div class="location-states-text">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Dot2">
+                            <path id="Ellipse 958" d="M12.5 10C12.5 11.3807 11.3807 12.5 10 12.5C8.61929 12.5 7.5 11.3807 7.5 10C7.5 8.61929 8.61929 7.5 10 7.5C11.3807 7.5 12.5 8.61929 12.5 10Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                          </svg>
+                          <p>United States</p>
+                        </div>
+                        <div class="location-states-text">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Dot2">
+                            <path id="Ellipse 958" d="M12.5 10C12.5 11.3807 11.3807 12.5 10 12.5C8.61929 12.5 7.5 11.3807 7.5 10C7.5 8.61929 8.61929 7.5 10 7.5C11.3807 7.5 12.5 8.61929 12.5 10Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                          </svg>
+                          <p>Canada</p>
+                        </div>
+                        <div class="location-states-text">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Dot2">
+                            <path id="Ellipse 958" d="M12.5 10C12.5 11.3807 11.3807 12.5 10 12.5C8.61929 12.5 7.5 11.3807 7.5 10C7.5 8.61929 8.61929 7.5 10 7.5C11.3807 7.5 12.5 8.61929 12.5 10Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                          </svg>
+                          <p>Mexico</p>
+                        </div>
+                        <div class="location-states-text">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Dot2">
+                            <path id="Ellipse 958" d="M12.5 10C12.5 11.3807 11.3807 12.5 10 12.5C8.61929 12.5 7.5 11.3807 7.5 10C7.5 8.61929 8.61929 7.5 10 7.5C11.3807 7.5 12.5 8.61929 12.5 10Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                          </svg>
+                          <p>Other</p>
+                        </div>
                       </div>
 
                       <div class="location-numbers">
@@ -331,35 +359,49 @@
           <h4>Activities</h4>
           <div>
             <div class="activities-message">
-              <img src="Images/Avatar-activities1.png" alt="" />
+              <div class="activities-icon">
+                <img src="Images/Avatar-activities1.png" alt="" />
+                <div></div>
+              </div>
               <div>
                 <p>Edited the details of Project X</p>
                 <p class="time">5m ago</p>
               </div>
             </div>
             <div class="activities-message">
-              <img src="Images/Avatar-activities2.png" alt="" />
+              <div class="activities-icon">
+                <img src="Images/Avatar-activities2.png" alt="" />
+                <div></div>
+              </div>
               <div>
                 <p>Changed Status of Proje...</p>
                 <p class="time">1:32 Am</p>
               </div>
             </div>
             <div class="activities-message">
-              <img src="Images/Avatar-activities3.png" alt="" />
+              <div class="activities-icon">
+                <img src="Images/Avatar-activities3.png" alt="" />
+                <div></div>
+              </div>
               <div>
                 <p>Submitted a bug</p>
                 <p class="time">Yesterday 12:39 AM</p>
               </div>
             </div>
             <div class="activities-message">
-              <img src="Images/Avatar-activities4.png" alt="" />
+              <div class="activities-icon">
+                <img src="Images/Avatar-activities4.png" alt="" />
+                <div></div>
+              </div>
               <div>
                 <p>Modified A data in Page X</p>
                 <p class="time">Last Thursday 3:34 AM</p>
               </div>
             </div>
             <div class="activities-message">
-              <img src="Images/Avatar-activities5.png" alt="" />
+              <div class="activities-icon">
+                <img src="Images/Avatar-activities5.png" alt="" />
+              </div>
               <div>
                 <p>Deleted a page in Project X</p>
                 <p class="time">Aug 11</p>
