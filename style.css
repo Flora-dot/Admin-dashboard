@@ -737,7 +737,7 @@ img.chart2{
 
 
 /* media query starts here */
-@media only screen and (min-width: 1024px) and (max-width: 1366px)  {
+@media only screen and (min-width: 1100px) and (max-width: 1366px)  {
     .line-graph{
         padding: 25px 10px 22px 10px;
     }
@@ -766,27 +766,27 @@ img.chart2{
         left: 310px;
     }
     .histogram{
-        top: 125px;
+        top: 126px;
         left: 55px;
     } 
     .histogram1{
-        top: 110px;
+        top: 113px;
         left: 103px;
     }
     .histogram2{
-        top: 119px;
+        top: 123px;
         left: 150px;
     }
     .histogram3{
-        top: 70px;
+        top: 75px;
         left: 195px;
     }
     .histogram4{
-        top: 155px;
+        top: 160px;
         left: 240px;
     }
     .histogram5{
-        top: 103px;
+        top: 107px;
         left: 290px;
     }
 }
