@@ -737,6 +737,56 @@ img.chart2{
 
 
 /* media query starts here */
-/* @media only screen and (min-width: 920px) and (max-width: 1024px)  {
-    
-} */
+@media only screen and (min-width: 920px) and (max-width: 1024px)  {
+    .line-graph{
+        padding: 25px 10px 22px 10px;
+    }
+    .line-graph_text p{
+        font-size: 13px;
+    }
+    .line-graph_text{
+        gap: 5px;
+    }
+    .vector-line1{
+        width: 58%;
+        top: 120px;
+        left: 90px;
+    }
+    .vector-line2{
+        width: 58%;
+        top: 128px;
+        left: 80px;
+    }
+    .chart-dot{
+        top: 150px;
+        left: 360px;
+    }
+    .char-note{
+        top: 120px;
+        left: 310px;
+    }
+    .histogram{
+        top: 125px;
+        left: 55px;
+    } 
+    .histogram1{
+        top: 110px;
+        left: 103px;
+    }
+    .histogram2{
+        top: 119px;
+        left: 150px;
+    }
+    .histogram3{
+        top: 70px;
+        left: 195px;
+    }
+    .histogram4{
+        top: 155px;
+        left: 240px;
+    }
+    .histogram5{
+        top: 103px;
+        left: 290px;
+    }
+}
