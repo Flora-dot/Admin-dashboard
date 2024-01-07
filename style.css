@@ -737,7 +737,7 @@ img.chart2{
 
 
 /* media query starts here */
-@media only screen and (min-width: 920px) and (max-width: 1024px)  {
+@media only screen and (min-width: 1024px) and (max-width: 1366px)  {
     .line-graph{
         padding: 25px 10px 22px 10px;
     }
