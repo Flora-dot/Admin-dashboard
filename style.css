@@ -72,6 +72,14 @@ body.dark-theme .marketing{
     background-color: var(--white-5, rgba(255, 255, 255, 0.05));
 }
 
+body.dark-theme .active{
+    background-color: var(--white-10);
+}
+
+body.dark-theme .active div{
+    border-left:4px solid var(--secondary-purple);
+}
+
 body.dark-theme .left-side-bar{
     border-right:1px solid var(--white-10) ;
 }
@@ -180,10 +188,26 @@ div.favorites{
     padding-left: 0;
 }
 
-#user-profile_dropdown li{
-    margin-left: 2.5rem;
+#user-profile_dropdown li:not(.active){
+    padding-left: 2.5rem;
 }
 
+.active{
+    display: flex;
+    width: 150px;
+    height: 28px;
+    padding: 4px 4px 4px 0px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    background: var(--black-5, rgba(0, 0, 0, 0.05));
+}
+
+.active div{
+    border-left: 4px solid var(--black-100);
+    border-radius: 3px;
+    height: 20px;
+}
 
 .left-side-bar li a{
     text-decoration: none;
